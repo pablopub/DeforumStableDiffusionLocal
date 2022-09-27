@@ -26,7 +26,8 @@ if setup_environment:
         ['pip', 'install', 'pandas'],
         ['pip', 'install', 'scikit-image'],
         ['pip', 'uninstall', 'numpy', '-y'],
-        ['pip', 'install', '-U', 'numpy']
+        ['pip', 'install', '-U', 'numpy'],
+        ['pip', 'install', 'numpngw']
     ]
     for process in all_process:
         running = subprocess.run(process,stdout=subprocess.PIPE).stdout.decode('utf-8')
